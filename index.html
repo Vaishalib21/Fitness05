@@ -1,0 +1,178 @@
+<html>
+<head>
+  <title>Fitness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    body {
+      background-image: url("https://www.verywellfit.com/thmb/9NsFAUh83iLKpCjbYpgLtGtsjV4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cardiovascular-endurance-59f7fc2faad52b00100156aa.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    p, h3, a {
+      color: white;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      margin: 0;
+      text-align: right;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px 18px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: green;
+      color: white;
+      padding: 14px 20px;
+      margin: 10px 0;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: darkgreen;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: lightgreen;
+    }
+
+    .form-container {
+      margin: auto;
+      padding: 20px;
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .form-container img {
+      margin-bottom: 20px;
+      height: auto;
+      width: 50%;
+    }
+
+    .logo {
+      position: fixed;
+      top: 5px;
+      left: 5%;
+      z-index: 1001;
+    }
+
+    .logo img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .container {
+      max-width: 400px;
+      padding: 20px;
+      margin: 20px auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      nav a {
+        font-size: 0.9rem;
+        margin: 0 5px;
+      }
+
+      .form-container img {
+        width: 60%;
+      }
+
+      .container {
+        width: 90%;
+        padding: 15px;
+      }
+
+      button, input {
+        font-size: 0.9rem;
+      }
+
+      .logo img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="https://t4.ftcdn.net/jpg/01/08/58/99/360_F_108589978_b9XaL1FaXBpNd44A68QWAIapiSlieYl5.jpg" alt="Fitness Logo">
+  </div>
+
+  <nav>
+    <b>
+      <a href="home.html">Home</a>
+      <a href="about_us.html">About Us</a>
+      <a href="plans.html">Plans</a>
+      <a href="contact_us.html">Contact Us</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </b>
+  </nav>
+
+  <div class="form-container">
+    <div class="container">
+      <form>
+        <img src="https://getdrawings.com/free-icon-bw/icon-login-18.png" alt="Login Icon">
+        <input type="text" placeholder="Enter Username" name="name" required>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
